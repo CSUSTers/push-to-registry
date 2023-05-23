@@ -1,4 +1,4 @@
-name: 'Push To Registry'
+name: 'Push To Registry Cust'
 description: 'Push a container image to an image registry'
 author: 'Red Hat'
 branding:
@@ -37,6 +37,10 @@ inputs:
     description: |
       Extra args to be passed to podman push.
       Separate arguments by newline. Do not use quotes - @actions/exec will do the quoting for you.
+    required: false
+  retry:
+    description: |
+      I want to try it again and again and again and again and again and again and again and again and again and again and again and again...
     required: false
 
 outputs:
