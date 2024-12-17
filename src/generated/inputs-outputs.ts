@@ -41,7 +41,7 @@ export enum Inputs {
     RETRY = "retry",
     /**
      * 'The tag or tags of the image/manifest to push.
-     * For multiple tags, seperate by whitespace. For example, "latest v1"'
+     * For multiple tags, separate by whitespace. For example, "latest v1"'
      * Required: false
      * Default: "latest"
      */

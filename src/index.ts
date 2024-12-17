@@ -320,7 +320,9 @@ async function pullImageFromDocker(): Promise<ImageStorageCheckResult> {
         }
     }
     catch (err) {
-        core.warning(err);
+        if (err instanceof Error) {
+            core.debug(err.message);
+        }
     }
 
     return {
@@ -350,7 +352,9 @@ async function checkImageInPodman(): Promise<ImageStorageCheckResult> {
         }
     }
     catch (err) {
-        core.debug(err);
+        if (err instanceof Error) {
+            core.debug(err.message);
+        }
     }
 
     return {
